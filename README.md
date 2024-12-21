@@ -6,7 +6,7 @@ Project Euler is a series of challenging mathematical/computer programming probl
 Click [here](https://projecteuler.net/) to learn more information.
 
 ## What is the purpose?
-I undertook this challenge as a fun way to advance my math and algorithmic-thinking skills.
+I undertook this challenge as a fun way to advance my mathematical/algorithmc-thinking skills.
 
 ## Why just the first 100 problems?
 One of the rules of Project Euler explains that solution developments for only the first 100 problems can be publicly shared.
