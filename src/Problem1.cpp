@@ -1,4 +1,6 @@
-#include "Problem1.h"
+#include "Problems.h"
+
+// Problem 1 Description Link: https://projecteuler.net/problem=1
 
 int Problem1::solution() {
     // A generalized approach solved in O(1) time using Gauss's Formula
