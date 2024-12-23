@@ -1,7 +1,21 @@
-#include <iostream>
+#include <cstdio>
+#include <sys/time.h>
 #include <Problem1.h>
 
 int main(int, char**) {
-    std::cout << "Problem 1 Solution: " << Problem1::solution() << std::endl;
+    // start time
+    timeval beg, end;
+    gettimeofday(&beg, nullptr);
+
+    // execute timed code section
+    int ans = Problem1::solution();
+
+    // stop time
+    gettimeofday(&end, nullptr);
+    const double runtime = end.tv_sec - beg.tv_sec + (end.tv_usec - beg.tv_usec) / 1000000.0;
+
+    // print results
+    printf("Problem 1 Solution: %d\n", ans);
+    printf("Solution Runtime: %f s\n", runtime);
     return 0;
 }
