@@ -1,6 +1,6 @@
 #include <cstdio>
 #include <sys/time.h>
-#include <Problems.h>
+#include <Problem3.h>
 
 int main(int, char**) {
     // start time
