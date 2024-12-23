@@ -2,7 +2,8 @@
 #define TOOLKIT
 
 namespace Toolkit {
-    bool isPrime(int);
+    bool isPrime(const unsigned int);
+    bool isPalindromicNumber(unsigned int);
 }
 
 #endif
