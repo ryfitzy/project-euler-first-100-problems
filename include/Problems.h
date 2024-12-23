@@ -9,4 +9,9 @@ namespace Problem2 {
     int solution();
 }
 
+namespace Problem3 {
+    int solution();
+    bool isPrime(int);
+}
+
 #endif

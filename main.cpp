@@ -8,7 +8,7 @@ int main(int, char**) {
     gettimeofday(&beg, nullptr);
 
     // execute timed code section (change this line for different problems)
-    int ans = Problem2::solution();
+    int ans = Problem3::solution();
 
     // stop time
     gettimeofday(&end, nullptr);
