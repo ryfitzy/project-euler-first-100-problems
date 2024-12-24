@@ -2,11 +2,6 @@
 #include "Toolkit.h"
 #include <vector>
 #include <array>
-#include <iostream>
-
-using ull = unsigned long long;
-
-
 
 int Problem5::solution() {
     unsigned int ans = 1;
