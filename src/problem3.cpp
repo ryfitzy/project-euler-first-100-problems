@@ -1,5 +1,5 @@
-#include "Problem3.h"
-#include "Toolkit.h"
+#include "problem3.h"
+#include "toolkit.h"
 
 // Problem 3 Description Link: https://projecteuler.net/problem=3
 

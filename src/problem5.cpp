@@ -1,5 +1,5 @@
-#include "Problem5.h"
-#include "Toolkit.h"
+#include "problem5.h"
+#include "toolkit.h"
 #include <vector>
 #include <array>
 

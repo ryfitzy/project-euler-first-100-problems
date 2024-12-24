@@ -1,5 +1,5 @@
-#include "Problem4.h"
-#include "Toolkit.h"
+#include "problem4.h"
+#include "toolkit.h"
 
 int Problem4::solution() {
     int largestPalindrome = -1;
