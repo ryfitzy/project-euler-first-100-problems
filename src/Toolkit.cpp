@@ -1,5 +1,6 @@
 #include "Toolkit.h"
 #include <string>
+#include <vector>
 
 bool Toolkit::isPrime(const unsigned int n) {
     if (n <= 1) return false;
@@ -14,4 +15,15 @@ bool Toolkit::isPalindromicNumber(unsigned int num) {
     for (int i = 0; i < str.length(); ++i)
         if (str[i] != str[str.length()-1 - i]) return false;
     return true;
+}
+
+std::vector<int> Toolkit::primeFactorization(unsigned int num) {
+    std::vector<int> primeFactors;
+    for (int i = 2; i <= num; ++i) {
+        while (num % i == 0 && Toolkit::isPrime(i)) {
+            primeFactors.push_back(i);
+            num /= i;
+        }
+    }
+    return primeFactors;
 }
