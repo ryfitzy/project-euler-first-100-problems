@@ -1,6 +1,6 @@
 #include <cstdio>
 #include <sys/time.h>
-#include <problem5.h>
+#include <problem6.h>
 
 int main(int, char**) {
     // start time
@@ -8,7 +8,7 @@ int main(int, char**) {
     gettimeofday(&beg, nullptr);
 
     // execute timed code section (change this line for different problems)
-    int ans = Problem5::solution();
+    int ans = Problem6::solution();
 
     // stop time
     gettimeofday(&end, nullptr);
