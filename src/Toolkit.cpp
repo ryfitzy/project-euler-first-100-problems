@@ -11,10 +11,14 @@ bool Toolkit::isPrime(const unsigned int n) {
 }
 
 bool Toolkit::isPalindromicNumber(unsigned int num) {
-    std::string str = std::to_string(num);
-    for (int i = 0; i < str.length(); ++i)
-        if (str[i] != str[str.length()-1 - i]) return false;
-    return true;
+    int reversed = 0, original = num;
+
+    while (num > 0) {
+        reversed = reversed * 10 + num % 10;
+        num /= 10;
+    }
+
+    return original == reversed;
 }
 
 std::vector<int> Toolkit::primeFactorization(unsigned int num) {

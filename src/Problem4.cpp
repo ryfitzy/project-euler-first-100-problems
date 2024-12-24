@@ -3,16 +3,14 @@
 
 int Problem4::solution() {
     int largestPalindrome = -1;
-    int a = 100;
-    while (a < 1000) {
+    int a = 999;
+    while (a > 100) {
         int b = a;
-        while (b < 1000) {
-            if (Toolkit::isPalindromicNumber(a*b) && a*b > largestPalindrome) {
-                largestPalindrome = a*b;
-            }
-            ++b;
+        while (a*b > largestPalindrome && b > 100) {
+            if (Toolkit::isPalindromicNumber(a*b)) largestPalindrome = a*b;
+            --b;
         }
-        ++a;
+        --a;
     }
     return largestPalindrome;
 }
