@@ -31,3 +31,10 @@ std::vector<int> Toolkit::primeFactorization(unsigned int num) {
     }
     return primeFactors;
 }
+
+int Toolkit::numDivisors(const unsigned int num) {
+    int numDivisors = 0;
+    for (int i = 1; i <= num; ++i) 
+        if (num % i == 0) ++numDivisors;
+    return numDivisors; 
+}

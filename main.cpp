@@ -1,6 +1,6 @@
 #include <cstdio>
 #include <sys/time.h>
-#include <problem11.h>
+#include <problem12.h>
 
 int main(int, char**) {
     // start time
@@ -8,7 +8,7 @@ int main(int, char**) {
     gettimeofday(&beg, nullptr);
 
     // execute timed code section (change this line for different problems)
-    const unsigned long long ans = Problem11::solution();
+    const unsigned long long ans = Problem12::solution();
 
     // stop time
     gettimeofday(&end, nullptr);
