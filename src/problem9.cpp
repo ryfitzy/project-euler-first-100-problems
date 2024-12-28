@@ -1,7 +1,6 @@
 #include "problem9.h"
 #include "toolkit.h"
 #include <cmath>
-#include <iostream>
 
 using ull = unsigned long long;
 
@@ -13,5 +12,5 @@ ull Problem9::solution() {
             for (int k = a; k < j; ++k)
                 if (i+j+k == 1000 && pow(i,2) == pow(j,2) + pow(k,2))
                     return i*j*k;
-    return 0;
+    return -1;
 }
