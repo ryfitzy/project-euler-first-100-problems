@@ -9,7 +9,7 @@ using ull = unsigned long long;
 ull Problem8::solution() {
     // Possible optimization to consider is to ignore adjacent digits with at least one 0
     ull maxProduct = 0;
-    std::ifstream f("data/Problem8.txt");
+    std::ifstream f("data/problem8.txt");
     std::string input;
     while (f.peek() != EOF) {
         std::string line;
