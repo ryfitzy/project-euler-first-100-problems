@@ -1,9 +1,9 @@
 #include "problem13.h"
 #include "toolkit.h"
 #include <fstream>
-#include <iostream>
+#include <string>
 
-void Problem13::solution() {
+std::string Problem13::solution() {
     std::ifstream f("data/problem13.txt");
     char nums[100][50];
     int sum[50];
@@ -17,8 +17,8 @@ void Problem13::solution() {
         sum[i] = subtotal % 10;
         carry = subtotal / 10;
     }
-    std::cout << carry;
-    for (int i : sum) std::cout << i;
-    std::cout << std::endl;
-    return;
+    std::string ans;
+    ans += std::to_string(carry);
+    for (int i = 0; i < 50; ++i) ans += sum[i] + '0';
+    return ans.substr(0,10);
 }

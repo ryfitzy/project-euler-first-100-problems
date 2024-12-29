@@ -1,8 +1,10 @@
 #ifndef PROBLEM13
 #define PROBLEM13
 
+#include <string>
+
 namespace Problem13 {
-    void solution();
+    std::string solution();
 }
 
 #endif
