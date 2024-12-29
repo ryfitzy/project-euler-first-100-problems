@@ -34,7 +34,7 @@ std::vector<int> Toolkit::primeFactorization(unsigned int num) {
 
 int Toolkit::numDivisors(const unsigned int num) {
     int numDivisors = 0;
-    for (int i = 1; i <= num; ++i) 
+    for (int i = 1; i <= num / 2; ++i) 
         if (num % i == 0) ++numDivisors;
     return numDivisors; 
 }
