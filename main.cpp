@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sys/time.h>
-#include <problem13.h>
+#include <problem14.h>
 
 int main(int, char**) {
     // start time
@@ -8,7 +8,7 @@ int main(int, char**) {
     gettimeofday(&beg, nullptr);
 
     // execute timed code section (change this line for different problems)
-    std::cout << "Solution: " << Problem13::solution() << std::endl;
+    std::cout << "Solution: " << Problem14::solution() << std::endl;
 
     // stop time
     gettimeofday(&end, nullptr);
