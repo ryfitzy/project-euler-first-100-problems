@@ -1,6 +1,7 @@
 #include "toolkit.h"
 #include <string>
 #include <vector>
+#include <cmath>
 
 bool Toolkit::isPrime(const unsigned int n) {
     if (n <= 1) return false;
@@ -34,7 +35,10 @@ std::vector<int> Toolkit::primeFactorization(unsigned int num) {
 
 int Toolkit::numDivisors(const unsigned int num) {
     int numDivisors = 0;
-    for (int i = 1; i <= num / 2; ++i) 
-        if (num % i == 0) ++numDivisors;
+    int upperBound = sqrt(num);
+    for (int i = 1; i <= upperBound; ++i) {
+        if (num % i == 0) numDivisors += 2;
+        if (i == num / i) --numDivisors;
+    }
     return numDivisors; 
 }
