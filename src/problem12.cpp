@@ -1,6 +1,5 @@
 #include "problem12.h"
 #include "toolkit.h"
-#include <iostream>
 
 using ull = unsigned long long;
 
