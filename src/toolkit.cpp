@@ -3,6 +3,8 @@
 #include <vector>
 #include <cmath>
 
+using ull = unsigned long long;
+
 bool Toolkit::isPrime(const unsigned int n) {
     if (n <= 1) return false;
     for (int i = 2; i * i <= n; ++i) {
@@ -41,4 +43,9 @@ int Toolkit::numDivisors(const unsigned int num) {
         if (i == num / i) --numDivisors;
     }
     return numDivisors; 
+}
+
+unsigned long long Toolkit::factorial(const unsigned long long num) {
+    if (num == 0 || num == 1) return 1;
+    return num * factorial(num - 1);
 }
