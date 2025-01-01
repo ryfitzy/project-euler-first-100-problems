@@ -1,9 +1,8 @@
 #include "toolkit.h"
-#include <string>
-#include <vector>
-#include <cmath>
+#include <boost/multiprecision/cpp_int.hpp>
 
 using ull = unsigned long long;
+using namespace boost::multiprecision;
 
 bool Toolkit::isPrime(const unsigned int n) {
     if (n <= 1) return false;
@@ -37,7 +36,7 @@ std::vector<int> Toolkit::primeFactorization(unsigned int num) {
 
 int Toolkit::numDivisors(const unsigned int num) {
     int numDivisors = 0;
-    int upperBound = sqrt(num);
+    int upperBound = std::sqrt(num);
     for (int i = 1; i <= upperBound; ++i) {
         if (num % i == 0) numDivisors += 2;
         if (i == num / i) --numDivisors;
@@ -45,7 +44,14 @@ int Toolkit::numDivisors(const unsigned int num) {
     return numDivisors; 
 }
 
-unsigned long long Toolkit::factorial(const unsigned long long num) {
-    if (num == 0 || num == 1) return 1;
-    return num * factorial(num - 1);
+std::string Toolkit::factorial(const unsigned long long num) {
+    cpp_int fact = 1;
+    for (int i = num; i > 1; --i) {
+        fact *= i;
+    }
+    return fact.str();
+}
+
+std::string Toolkit::bigMultiply(std::string n1, std::string n2) {
+    return "";
 }

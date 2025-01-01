@@ -1,5 +1,8 @@
 #include "problem15.h"
 #include "toolkit.h"
+#include <boost/multiprecision/cpp_int.hpp>
+
+using namespace std;
 
 /*
     This can be done using the following combinatorics theorem:
@@ -12,8 +15,6 @@
     to permutate 2 types of indistinguishable objects.
 */
 
-int Problem15::solution() {
-    // This is the result after doing 40! / (20! * 20!) in a calculator
-    // I will find a library to calculate such large numbers later
-    return 137846528820;
+std::string Problem15::solution() {
+    return Toolkit::factorial(40);
 }
