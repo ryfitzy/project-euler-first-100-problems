@@ -1,8 +1,8 @@
 #include "problem15.h"
 #include "toolkit.h"
-#include <boost/multiprecision/cpp_int.hpp>
+#include "multiprecision.h"
 
-using namespace std;
+using namespace Toolkit;
 
 /*
     This can be done using the following combinatorics theorem:
@@ -15,6 +15,6 @@ using namespace std;
     to permutate 2 types of indistinguishable objects.
 */
 
-std::string Problem15::solution() {
-    return Toolkit::factorial(40);
+cpp_int Problem15::solution() {
+    return factorial(40) / (factorial(20) * factorial(20));
 }

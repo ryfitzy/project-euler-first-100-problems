@@ -1,8 +1,7 @@
 #include "toolkit.h"
-#include <boost/multiprecision/cpp_int.hpp>
+#include "multiprecision.h"
 
 using ull = unsigned long long;
-using namespace boost::multiprecision;
 
 bool Toolkit::isPrime(const unsigned int n) {
     if (n <= 1) return false;
@@ -44,14 +43,10 @@ int Toolkit::numDivisors(const unsigned int num) {
     return numDivisors; 
 }
 
-std::string Toolkit::factorial(const unsigned long long num) {
+cpp_int Toolkit::factorial(const unsigned long long num) {
     cpp_int fact = 1;
     for (int i = num; i > 1; --i) {
         fact *= i;
     }
-    return fact.str();
-}
-
-std::string Toolkit::bigMultiply(std::string n1, std::string n2) {
-    return "";
+    return fact;
 }

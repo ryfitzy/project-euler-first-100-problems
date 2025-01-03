@@ -1,10 +1,10 @@
 #ifndef PROBLEM15
 #define PROBLEM15
 
-#include <string>
+#include "multiprecision.h"
 
 namespace Problem15 {
-    std::string solution();
+    cpp_int solution();
 }
 
 #endif
