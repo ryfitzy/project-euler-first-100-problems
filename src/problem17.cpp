@@ -1,5 +1,4 @@
 #include "problem17.h"
-#include <iostream>
 
 // Not a super insightful problem, won't bother optimizing
 
