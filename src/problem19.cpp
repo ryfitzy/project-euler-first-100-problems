@@ -1,8 +1,7 @@
 #include "problem19.h"
-#include <iostream>
 
 /*
-    Problem 18 Link: https://projecteuler.net/problem=19
+    Problem 19 Link: https://projecteuler.net/problem=19
     Solved by only using the information given.
 */ 
 
