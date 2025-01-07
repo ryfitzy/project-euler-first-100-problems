@@ -1,4 +1,5 @@
 #include "problem19.h"
+#include <iostream>
 
 /*
     Problem 18 Link: https://projecteuler.net/problem=19
@@ -19,11 +20,13 @@ int Problem19::solution() {
 
         if (currentDay[2] == 28 && currentDay[1] == 2) {
             if (currentDay[3] % 4 == 0) {
-                ++currentDay[2];
-                continue;
+                if (currentDay[3] % 100 != 0 || currentDay[3] % 400 == 0) {
+                    ++currentDay[2];
+                    continue;
+                }
             }
-            currentDay[2] = 1;
             ++currentDay[1];
+            currentDay[2] = 1;
             continue;
         }
 
