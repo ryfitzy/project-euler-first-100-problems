@@ -1,4 +1,4 @@
-#include "problem20.h"
+#include "problem020.h"
 #include "multiprecision.h"
 #include "toolkit.h"
 #include <iostream>
@@ -13,9 +13,7 @@ using namespace Toolkit;
 int Problem20::solution() {
     int sum = 0;
     cpp_int num = factorial(100);
-    while (num > 0) {
-        sum += int(num % 10);
-        num /= 10;
-    }
+    std::string num_str = num.str();
+    for (char digit : num_str) sum += digit - '0';
     return sum;
 }

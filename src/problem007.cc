@@ -1,4 +1,4 @@
-#include "problem7.h"
+#include "problem007.h"
 #include "toolkit.h"
 
 int Problem7::solution() {

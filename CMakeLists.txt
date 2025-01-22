@@ -3,9 +3,6 @@ project(ProjectEuler VERSION 0.1.0 LANGUAGES C CXX)
 
 include_directories(include)
 
-file(GLOB SOURCES src/*.cpp)
+file(GLOB SOURCES src/*.cc)
 
-add_executable(ProjectEuler main.cpp ${SOURCES})
-
-include(CTest)
-enable_testing()
+add_executable(ProjectEuler main.cc ${SOURCES})

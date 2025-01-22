@@ -1,4 +1,4 @@
-#include "problem9.h"
+#include "problem009.h"
 #include "toolkit.h"
 #include <cmath>
 
@@ -10,7 +10,7 @@ ull Problem9::solution() {
     for (int i = c; i < 500; ++i)
         for (int j = b; j < i; ++j)
             for (int k = a; k < j; ++k)
-                if (i+j+k == 1000 && pow(i,2) == pow(j,2) + pow(k,2))
+                if (i+j+k == 1000 && pow(i,2) == pow(j,2) + pow(k,2)) 
                     return i*j*k;
     return 0;
 }

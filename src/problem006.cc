@@ -1,4 +1,4 @@
-#include "problem6.h"
+#include "problem006.h"
 #include <cmath>
 
 int Problem6::solution() {
