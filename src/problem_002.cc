@@ -1,4 +1,4 @@
-#include "problem002.h"
+#include "problem_002.h"
 
 // Problem 2 Description Link: https://projecteuler.net/problem=2
 

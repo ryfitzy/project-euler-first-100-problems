@@ -1,4 +1,4 @@
-#include "problem004.h"
+#include "problem_004.h"
 #include "toolkit.h"
 
 // Problem 4 Description Link: https://projecteuler.net/problem=4
