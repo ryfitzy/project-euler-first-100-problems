@@ -3,6 +3,9 @@
 
 using ull = unsigned long long;
 
+// Problem 12 Description Link: https://projecteuler.net/problem=12
+
+
 ull Problem12::solution() {
     ull currentNum = 1;
     ull currentTriangleNum = 1;

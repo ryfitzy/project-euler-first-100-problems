@@ -5,10 +5,7 @@
 
 using namespace Toolkit;
 
-/*
-    Problem 20 Link: https://projecteuler.net/problem=20
-    Solved by only using the information given.
-*/ 
+// Problem 20 Description Link: https://projecteuler.net/problem=20
 
 int Problem20::solution() {
     int sum = 0;

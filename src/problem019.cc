@@ -1,9 +1,6 @@
 #include "problem019.h"
 
-/*
-    Problem 19 Link: https://projecteuler.net/problem=19
-    Solved by only using the information given.
-*/ 
+// Problem 19 DescriptionLink: https://projecteuler.net/problem=19
 
 int Problem19::solution() {
     // Current Day encoded by weekday, month, day, year

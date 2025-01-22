@@ -1,6 +1,6 @@
 #include "problem017.h"
 
-// Not a super insightful problem, won't bother optimizing
+// Problem 17 Description Link: https://projecteuler.net/problem=17
 
 int Problem17::solution() {
     int total = 0;

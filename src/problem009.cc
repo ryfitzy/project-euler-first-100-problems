@@ -4,6 +4,8 @@
 
 using ull = unsigned long long;
 
+// Problem 9 Description Link: https://projecteuler.net/problem=9
+
 ull Problem9::solution() {
     // Generic brute force solution, might optimize later
     int a = 1, b = 2, c = 3;

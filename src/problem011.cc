@@ -3,6 +3,8 @@
 
 using ull = unsigned long long;
 
+// Problem 11 Description Link: https://projecteuler.net/problem=11
+
 ull checkHorizontal(const int grid[20][20]) {
     ull max = 1;
     for (int i = 0; i < 20; ++i) {

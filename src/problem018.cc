@@ -1,9 +1,9 @@
 #include "problem018.h"
 #include <fstream>
 
-/*
-    Problem 18 Link: https://projecteuler.net/problem=18
+// Problem 18 Description Link: https://projecteuler.net/problem=18
 
+/*
     Fun fact: I miraculously guessed the maximal path
     before programming the solution by eyeballing it!
     Here is the path I found:

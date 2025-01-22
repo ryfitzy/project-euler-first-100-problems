@@ -6,6 +6,8 @@
 
 using ull = unsigned long long;
 
+// Problem 8 Description Link: https://projecteuler.net/problem=8
+
 ull Problem8::solution() {
     // Possible optimization to consider is to ignore adjacent digits with at least one 0
     ull maxProduct = 0;

@@ -3,6 +3,8 @@
 #include <fstream>
 #include <string>
 
+// Problem 13 Description Link: https://projecteuler.net/problem=13
+
 std::string Problem13::solution() {
     std::ifstream f("data/problem13.txt");
     char nums[100][50];
