@@ -1,8 +1,8 @@
-#ifndef PROBLEM8
-#define PROBLEM8
+#ifndef PROBLEM_008
+#define PROBLEM_008
 
-namespace Problem8 {
-    unsigned long long solution();
+namespace problem_008 {
+  unsigned long long solution();
 }
 
 #endif

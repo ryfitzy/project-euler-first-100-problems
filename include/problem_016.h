@@ -1,10 +1,10 @@
-#ifndef PROBLEM16
-#define PROBLEM16
+#ifndef PROBLEM_016
+#define PROBLEM_016
 
 #include "multiprecision.h"
 
-namespace Problem16 {
-    cpp_int solution();
+namespace problem_016 {
+  cpp_int solution();
 }
 
 #endif

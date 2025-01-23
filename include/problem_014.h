@@ -1,8 +1,8 @@
-#ifndef PROBLEM14
-#define PROBLEM14
+#ifndef PROBLEM_014
+#define PROBLEM_014
 
-namespace Problem14 {
-    int solution();
+namespace problem_014 {
+  int solution();
 }
 
 #endif

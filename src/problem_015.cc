@@ -17,6 +17,6 @@ using namespace Toolkit;
     to permutate 2 types of indistinguishable objects.
 */
 
-cpp_int Problem15::solution() {
-    return factorial(40) / (factorial(20) * factorial(20));
+cpp_int problem_015::solution() {
+  return factorial(40) / (factorial(20) * factorial(20));
 }

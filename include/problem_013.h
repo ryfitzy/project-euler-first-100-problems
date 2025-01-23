@@ -1,10 +1,10 @@
-#ifndef PROBLEM13
-#define PROBLEM13
+#ifndef PROBLEM_013
+#define PROBLEM_013
 
 #include <string>
 
-namespace Problem13 {
-    std::string solution();
+namespace problem_013 {
+  std::string solution();
 }
 
 #endif
