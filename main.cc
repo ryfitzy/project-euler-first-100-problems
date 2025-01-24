@@ -1,16 +1,16 @@
-#include <iostream>
 #include <sys/time.h>
-#include "problem001.h"
+#include <iostream>
+#include "problem_008.h"
 
 int main() {
-  // start time
+  // Start time
   timeval beg, end;
   gettimeofday(&beg, nullptr);
 
-  // execute timed code section (change this line for different problems)
-  auto ans = problem_001::solution();
+  // Execute timed code section (change this line for different problems)
+  auto ans = problem_008::solution();
 
-  // stop time
+  // Stop time
   gettimeofday(&end, nullptr);
   const double runtime = end.tv_sec - beg.tv_sec + (end.tv_usec - beg.tv_usec);
 

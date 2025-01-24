@@ -1,8 +1,10 @@
 #ifndef PROBLEM_008
 #define PROBLEM_008
 
+#include "multiprecision.h"
+
 namespace problem_008 {
-  unsigned long long solution();
+  cpp_int solution();
 }
 
 #endif

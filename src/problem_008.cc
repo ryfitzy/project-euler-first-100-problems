@@ -1,17 +1,15 @@
-#include "problem_008.h"
-#include "toolkit.h"
 #include <fstream>
 #include <string>
-#include <iostream>
-
-using ull = unsigned long long;
+#include "multiprecision.h"
+#include "problem_008.h"
+#include "toolkit.h"
 
 // Problem 8 Description Link: https://projecteuler.net/problem=8
 
-ull problem_008::solution() {
+cpp_int problem_008::solution() {
   // Possible optimization to consider is to ignore adjacent digits with at least one 0
-  ull maxProduct = 0;
-  std::ifstream f("data/problem8.txt");
+  cpp_int maxProduct = 0;
+  std::ifstream f("data/problem_008.txt");
   std::string input;
   while (f.peek() != EOF) {
     std::string line;
@@ -19,11 +17,15 @@ ull problem_008::solution() {
     input += line;
   }
   f.close();
+  
   char* ptr1 = &input[0];
   char* ptr2 = &input[12];
   while(*ptr2 != '\0') {
-    ull currentProduct = 1;
-    for (const char* ptr = ptr1; ptr != ptr2 + 1; ++ptr) currentProduct *= *ptr - '0';
+    cpp_int currentProduct = 1;
+    for (const char* ptr = ptr1; ptr != ptr2 + 1; ++ptr) {
+      currentProduct *= *ptr - '0';
+      if (currentProduct == 0) break;
+    }
     if (currentProduct > maxProduct) maxProduct = currentProduct;
     ++ptr1;
     ++ptr2;
