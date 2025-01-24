@@ -2,8 +2,6 @@
 #include "problem_015.h"
 #include "toolkit.h"
 
-using namespace Toolkit;
-
 // Problem 15 Description Link: https://projecteuler.net/problem=15
 
 /*
@@ -18,5 +16,5 @@ using namespace Toolkit;
 */
 
 cpp_int problem_015::solution() {
-  return factorial(40) / (factorial(20) * factorial(20));
+  return toolkit::factorial(40) / (toolkit::factorial(20) * toolkit::factorial(20));
 }

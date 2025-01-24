@@ -9,7 +9,7 @@ int problem_004::solution() {
   while (a > 100) {
     int b = a;
     while (a*b > largestPalindrome && b > 100) {
-      if (Toolkit::isPalindromicNumber(a*b)) {
+      if (toolkit::isPalindromicNumber(a*b)) {
         largestPalindrome = a*b;
       }
       --b;

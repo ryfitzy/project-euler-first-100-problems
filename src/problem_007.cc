@@ -8,7 +8,7 @@ int problem_007::solution() {
   int num = 1;
   while (primeCounter < 10001) {
     ++num;
-    if (Toolkit::isPrime(num)) ++primeCounter;
+    if (toolkit::isPrime(num)) ++primeCounter;
   }
   return num;
 }

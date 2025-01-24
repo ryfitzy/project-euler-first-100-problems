@@ -3,7 +3,7 @@
 
 using ull = unsigned long long;
 
-bool Toolkit::isPrime(const unsigned int n) {
+bool toolkit::isPrime(const unsigned int n) {
   if (n <= 1) return false;
   for (int i = 2; i * i <= n; ++i) {
     if (n % i == 0) return false;
@@ -11,7 +11,7 @@ bool Toolkit::isPrime(const unsigned int n) {
   return true;
 }
 
-bool Toolkit::isPalindromicNumber(unsigned int num) {
+bool toolkit::isPalindromicNumber(unsigned int num) {
   int reversed = 0, original = num;
 
   while (num > 0) {
@@ -22,10 +22,10 @@ bool Toolkit::isPalindromicNumber(unsigned int num) {
   return original == reversed;
 }
 
-std::vector<int> Toolkit::primeFactorization(unsigned int num) {
+std::vector<int> toolkit::primeFactorization(unsigned int num) {
   std::vector<int> primeFactors;
   for (int i = 2; i <= num; ++i) {
-    while (num % i == 0 && Toolkit::isPrime(i)) {
+    while (num % i == 0 && toolkit::isPrime(i)) {
       primeFactors.push_back(i);
       num /= i;
     }
@@ -33,7 +33,7 @@ std::vector<int> Toolkit::primeFactorization(unsigned int num) {
   return primeFactors;
 }
 
-int Toolkit::numDivisors(const unsigned int num) {
+int toolkit::numDivisors(const unsigned int num) {
   int numDivisors = 0;
   int upperBound = std::sqrt(num);
   for (int i = 1; i <= upperBound; ++i) {
@@ -43,10 +43,18 @@ int Toolkit::numDivisors(const unsigned int num) {
   return numDivisors; 
 }
 
-cpp_int Toolkit::factorial(const unsigned long long num) {
+cpp_int toolkit::factorial(const unsigned long long num) {
   cpp_int fact = 1;
   for (int i = num; i > 1; --i) {
     fact *= i;
   }
   return fact;
+}
+
+int toolkit::properDivisorSum(const unsigned int num) {
+  unsigned int sum = 0;
+  for (unsigned int i = 1; i <= num / 2; ++i) {
+    if (num % i == 0) sum += i;
+  }
+  return sum;
 }

@@ -8,6 +8,6 @@ using ull = unsigned long long;
 ull problem_010::solution() {
   ull sum = 0;
   for (int i = 0; i < 2000000; ++i)
-    if (Toolkit::isPrime(i)) sum += i;
+    if (toolkit::isPrime(i)) sum += i;
   return sum;
 }

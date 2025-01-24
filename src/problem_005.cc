@@ -11,8 +11,8 @@ int problem_005::solution() {
   std::vector<std::vector<int>> composites;
 
   for (int i = 2; i < 21; ++i) {
-    if (Toolkit::isPrime(i)) primes.push_back({i, 1});
-    else composites.push_back(Toolkit::primeFactorization(i));
+    if (toolkit::isPrime(i)) primes.push_back({i, 1});
+    else composites.push_back(toolkit::primeFactorization(i));
   }
 
   for (std::array<int, 2>& prime : primes) {

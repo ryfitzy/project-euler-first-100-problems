@@ -8,7 +8,7 @@ using ull = unsigned long long;
 ull problem_012::solution() {
   ull currentNum = 1;
   ull currentTriangleNum = 1;
-  while (Toolkit::numDivisors(currentTriangleNum) <= 500) {
+  while (toolkit::numDivisors(currentTriangleNum) <= 500) {
     ++currentNum;
     currentTriangleNum += currentNum;
   }
