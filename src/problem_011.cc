@@ -1,5 +1,5 @@
-#include "problem_011.h"
 #include <fstream>
+#include "problem_011.h"
 
 using ull = unsigned long long;
 
@@ -70,7 +70,7 @@ ull checkRightDiagonal(const int grid[20][20]) {
 }
 
 ull problem_011::solution() {
-  std::ifstream f("data/problem11.txt");
+  std::ifstream f("data/problem_011.txt");
   int grid[20][20];
   for (int i = 0; i < 20; ++i) {
     for (int j = 0; j < 20; ++j) {

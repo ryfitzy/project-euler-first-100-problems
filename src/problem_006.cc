@@ -1,5 +1,5 @@
-#include "problem_006.h"
 #include <cmath>
+#include "problem_006.h"
 
 // Problem 6 Description Link: https://projecteuler.net/problem=6
 

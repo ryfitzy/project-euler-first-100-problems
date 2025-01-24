@@ -26,7 +26,7 @@ cpp_int problem_008::solution() {
       currentProduct *= *ptr - '0';
       if (currentProduct == 0) break;
     }
-    if (currentProduct > maxProduct) maxProduct = currentProduct;
+    currentProduct == std::max(currentProduct, maxProduct);
     ++ptr1;
     ++ptr2;
   }

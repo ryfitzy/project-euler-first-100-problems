@@ -1,5 +1,5 @@
-#include "problem_016.h"
 #include "multiprecision.h"
+#include "problem_016.h"
 
 // Problem 16 Description Link: https://projecteuler.net/problem=16
 

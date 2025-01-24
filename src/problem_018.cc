@@ -1,5 +1,5 @@
-#include "problem_018.h"
 #include <fstream>
+#include "problem_018.h"
 
 // Problem 18 Description Link: https://projecteuler.net/problem=18
 
@@ -13,7 +13,7 @@
 */ 
 
 int problem_018::solution() {
-  std::ifstream f("data/problem18.txt");
+  std::ifstream f("data/problem_018.txt");
   int triangle[15][15] = {0};
   int increment = 1;
   for (int i = 0; i < 15; ++i) {

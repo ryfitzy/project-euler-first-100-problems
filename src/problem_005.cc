@@ -1,7 +1,7 @@
+#include <array>
+#include <vector>
 #include "problem_005.h"
 #include "toolkit.h"
-#include <vector>
-#include <array>
 
 // Problem 5 Description Link: https://projecteuler.net/problem=5
 

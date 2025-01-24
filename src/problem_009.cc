@@ -1,6 +1,6 @@
+#include <cmath>
 #include "problem_009.h"
 #include "toolkit.h"
-#include <cmath>
 
 using ull = unsigned long long;
 
