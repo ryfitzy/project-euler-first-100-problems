@@ -1,12 +1,22 @@
 #!/usr/bin/env bash
 
-BUILD="build"
-MAIN_FILE="build/main.cc"
-EXECUTABLE="build/ProjectEuler"
+if [ $# -ne 1 ]
+then
+echo "USAGE: ./run.sh [PROBLEM_NUMBER]"
+exit 1
+fi
 
-mkdir -p $BUILD
+if [ $1 -lt 0 -o $1 -gt 100 ]
+then
+echo "ERROR: Number must be between 001 and 100"
+exit 1
+fi
 
-read -p "Enter a problem number from 001 - 100: " P_NUM
+MAIN_FILE=build/main.cc
+EXECUTABLE=build/ProjectEuler
+P_NUM=$1
+
+mkdir -p build
 
 touch $MAIN_FILE
 echo "// main.cc (generated) " > $MAIN_FILE
@@ -25,5 +35,7 @@ echo "  printf(\"Solution Runtime: %f s\n\", runtime / 1000000.0);" >> $MAIN_FIL
 echo "  return 0;" >> $MAIN_FILE
 echo "}" >> $MAIN_FILE
 
+echo "Compiling Problem $P_NUM..."
 g++ -std=c++17 -I include $MAIN_FILE "src/problem_$P_NUM.cc" "src/toolkit.cc" -o $EXECUTABLE
+echo "Compilation Successful! Running executable..."
 ./$EXECUTABLE
