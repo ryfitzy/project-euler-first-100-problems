@@ -36,6 +36,6 @@ echo "  return 0;" >> $MAIN_FILE
 echo "}" >> $MAIN_FILE
 
 echo "Compiling Problem $P_NUM..."
-g++ -std=c++17 -I include $MAIN_FILE "src/problem_$P_NUM.cc" "src/toolkit.cc" -o $EXECUTABLE
+g++ -g -std=c++17 -I include $MAIN_FILE "src/problem_$P_NUM.cc" "src/toolkit.cc" -o $EXECUTABLE
 echo "Compilation Successful! Running executable..."
 ./$EXECUTABLE

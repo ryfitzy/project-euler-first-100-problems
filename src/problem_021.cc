@@ -1,6 +1,5 @@
 #include "problem_021.h"
 #include "toolkit.h"
-#include <iostream>
 
 int problem_021::solution() {
   unsigned int sum = 0;
