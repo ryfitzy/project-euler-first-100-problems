@@ -10,6 +10,7 @@ namespace toolkit {
     int numDivisors(const unsigned int);
     cpp_int factorial(const unsigned long long);
     int properDivisorSum(const unsigned int);
+    char isPerfectNumber(const unsigned int);
 }
 
 #endif

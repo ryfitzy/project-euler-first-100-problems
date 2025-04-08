@@ -58,3 +58,10 @@ int toolkit::properDivisorSum(const unsigned int num) {
   }
   return sum;
 }
+
+char toolkit::isPerfectNumber(const unsigned int num) {
+  int dSum = properDivisorSum(num);
+  if (dSum < num) return '<';
+  if (dSum > num) return '>';
+  return '=';
+}
