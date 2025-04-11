@@ -3,7 +3,7 @@
 
 using ull = unsigned long long;
 
-bool toolkit::isPrime(const unsigned int n) {
+bool toolkit::isPrime(const int n) {
   if (n <= 1) return false;
   for (int i = 2; i * i <= n; ++i) {
     if (n % i == 0) return false;

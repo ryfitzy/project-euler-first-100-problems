@@ -4,7 +4,7 @@
 #include "multiprecision.h"
 
 namespace toolkit {
-    bool isPrime(const unsigned int);
+    bool isPrime(const int);
     bool isPalindromicNumber(unsigned int);
     std::vector<int> primeFactorization(unsigned int);
     int numDivisors(const unsigned int);
